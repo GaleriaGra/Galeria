@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="Styles.css" />
+	</head>
+	<body style="background-color:blue">
+		
+		<div id="FirstStage">
+			Kliknij by się zrelaksować
+		</div>
+		
+		<div id="SecondStage" style="display:none">
+			<div style="display:flex; align-items:center; justify-content:center;">
+				<img src="HawaiiGif.gif" style="height:100%;" />
+				<img src="HawaiiGif.gif" style="height:100%; display:inline; transform: scaleX(-1);" />
+			</div>
+			<div class="MiddleText">Zrelaksuj się...</div>
+			<div class="MiddleText">
+				<img src="HawaiiGif2.gif" style="width: 500px;" />
+			</div>
+			<div class="MiddleText">Zostań tutaj i odpocznij</div>
+			<div class="MiddleText">
+				<img src="HawaiiGif3.gif" style="width: 500px;" />
+			</div>
+			<div class="MiddleText" style="margin-top:500px">Nie ma potrzeby iść dalej</div>
+			<div class="MiddleText">
+				<img src="HawaiiGif4.gif" style="width: 500px;" />
+			</div>
+			<div class="MiddleText" style="margin-top:1200px">
+				<img src="HawaiiGif5.gif" style="width: 500px;" />
+			</div>
+			<div class="MiddleText" style="margin-top:1200px">Po co scrolujesz?</div>
+			<div class="MiddleText" style="margin-top:2400px">Dalej nic nie ma</div>
+			<div class="MiddleText" style="margin-top:3400px">
+				<img src="HawaiiGif6.gif" style="width: 500px;" />
+			</div>
+			<div class="MiddleText" style="margin-top:3400px">Nie schodź niżej</div>
+			<div class="MiddleText">Zostań tutaj...</div>
+			<div class="MiddleText" style="margin-top:4400px">Nie zostawiaj mnie samego...</div>
+			<div class="MiddleText" style="margin-top:6400px">
+				<img src="HawaiiGif7.gif" style="width: 500px;" />
+			</div>
+			<div class="MiddleText" style="margin-top:7400px">Posiedź tutaj jeszcze kilka minut nim użyjesz tego kodu</div>
+			<div class="MiddleText">Proszę...</div>
+			<div class="MiddleText" style="color:red">Kwadrat1234</div>
+			
+			<audio id="myAudio" loop>
+				<source src="SomewereOverTheRainbow.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		
+		<div id="ThirdStage" style="display:none">
+			<div class="MiddleText">Dziękuję że zostałeś ze mną na chwilę przyjacielu</div>
+			<div class="MiddleText" style="padding-top:0px">To moja pamiątka dla ciebie, nie zgub jej</div>
+			<div class="MiddleText" style="background-color:white; color:blue; font-size:90px; margin: 0px 40px 0px 40px;">
+				<img src="Klucze/Palma_Blue.png" /> = 197
+			</div>
+			
+		</div>
+		
+		<script>
+			$("#FirstStage").click(() => {
+				$("#FirstStage").css("display", "none");
+				$("#SecondStage").css("display", "block");
+				document.getElementById("myAudio").play();
+				
+				setTimeout(() => {
+					$("#SecondStage").css("display", "none");
+					$("#ThirdStage").css("display", "block");
+				}, 200000);
+			});
+		</script>
+	</body>
+</html>
