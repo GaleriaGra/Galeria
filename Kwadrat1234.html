@@ -1,27 +1,12 @@
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="JQuery.js"></script>
 		<link rel="stylesheet" href="Styles.css" />
 	</head>
 	<body>
-		<div id="FirstStage" style="color:black; flex-direction: column; font-size:75px">
-			<div>Przed tobą ciężkie zadanie</div>
-			<div>Lecz czeka cię <span style="color:blue">nagroda</span></div>
-			<div id="StartBattle">Jestem gotowy!</div>
-		</div>
-		<div id="SecondStage" style="display:none; color:red; padding:0px 50px 0px 50px; height:100%; font-size:40px; text-align:center" class="MiddleText">
+		<div id="SecondStage" style="color:red; padding:0px 50px 0px 50px; height:100%; font-size:40px; text-align:center" class="MiddleText">
 			^(80)^((2*5)(4))^(^(42+7*2)^(^(53)(348/58)))^((11)(3-3))^(^(^52^57)^(^(50+2)^(60-3))^((57-52)^(49)))^114^(26*2+(10+2)*2-2)
 		</div>
-		<audio id="myAudio" loop>
-			<source src="Boss.mp3" type="audio/mp3" />
-		</audio>
 		
-		<script>
-			$("#StartBattle").click(() => {
-				$("#FirstStage").css("display", "none");
-				$("#SecondStage").css("display", "flex");
-				document.getElementById("myAudio").play();
-			});
-		</script>
 	</body>
 </html>
